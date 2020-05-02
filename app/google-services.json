@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1000222197095",
+    "firebase_url": "https://smartsafekitchen-1f1da.firebaseio.com",
+    "project_id": "smartsafekitchen-1f1da",
+    "storage_bucket": "smartsafekitchen-1f1da.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1000222197095:android:50c9cb11443344292c9bc2",
+        "android_client_info": {
+          "package_name": "com.example.smartandsafekitchen"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1000222197095-gi8tt6ev2i2kb1fvmk2tfhcop72of88f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAp_oXQfgLUPhhSC88iuBdv7Tiyfd4fAFE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1000222197095-gi8tt6ev2i2kb1fvmk2tfhcop72of88f.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

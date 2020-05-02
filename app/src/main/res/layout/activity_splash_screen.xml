@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:background="#239DB3"
+    android:orientation="vertical"
+    tools:context=".SplashScreen">
+    <ImageView
+        android:id="@+id/imagelogo"
+        android:layout_width="200sp"
+        android:layout_height="200sp"
+        android:layout_gravity="center"
+        android:src="@drawable/logo" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imagelogo"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:text="Smart And Safe Kitchen"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+</LinearLayout>
