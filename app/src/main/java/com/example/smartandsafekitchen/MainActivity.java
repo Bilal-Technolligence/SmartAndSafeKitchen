@@ -10,6 +10,11 @@ import android.view.View;
 public class MainActivity extends AppCompatActivity {
     CardView btnWater, btnSmoke, btnGas, btnTemp;
 
+
+                      //FireBase ID : smartsafekitchen@gmail.com
+                         //Password : Tech1234
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

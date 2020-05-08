@@ -29,7 +29,7 @@ public class SmokeSensorActivity extends AppCompatActivity {
             @Override
             public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
                 if(switchButton.isChecked()){
-                    dref.child( "SmokeGas" ).child( "fan" ).setValue( 0 );
+                    dref.child( "SmokeGas" ).child( "fan" ).setValue( 1 );
                     dref.child( "SmokeGas" ).child( "Smoke" ).setValue( 0 );
                     Animation animation = AnimationUtils.loadAnimation(SmokeSensorActivity.this, R.anim.fananim);
                     animationTarget.startAnimation(animation);
