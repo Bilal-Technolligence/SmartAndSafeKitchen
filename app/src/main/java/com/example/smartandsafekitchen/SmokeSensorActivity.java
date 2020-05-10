@@ -55,7 +55,7 @@ private final String CHANNEL_ID ="personal" ;
         switchButton=(Switch) findViewById(R.id.txtonoff);
         final ImageView animationTarget = (ImageView) this.findViewById(R.id.fanimage);
 
-        dref.child( "SmokeGas" ).addListenerForSingleValueEvent( new ValueEventListener() {
+        dref.child( "SmokeGas" ).addValueEventListener( new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                 // smoke =Float.parseFloat(dataSnapshot.child( "Smoke" ).getValue().toString());
@@ -64,8 +64,8 @@ private final String CHANNEL_ID ="personal" ;
                 if(smoke==1)
                 {
                     //dref.child( "SmokeGas" ).child( "fan" ).setValue( 1 );
-                    generateAlert();
-                    saveNotificationfirebase();
+                    //generateAlert();
+                    //saveNotificationfirebase();
                     switchButton.setChecked(true);
                     Animation animation = AnimationUtils.loadAnimation(SmokeSensorActivity.this, R.anim.fananim);
                     animationTarget.startAnimation(animation);

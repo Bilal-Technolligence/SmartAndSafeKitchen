@@ -15,6 +15,8 @@ public class SplashScreen extends AppCompatActivity {
         super.onCreate( savedInstanceState );
         setContentView( R.layout.activity_splash_screen );
         ImageView imageView = findViewById( R.id.imagelogo );
+        Intent i = new Intent(this , MyService.class);
+        startService(i);
 //        ImageView imageView1 = findViewById( R.id.imagelogo1 );
         Animation animation = AnimationUtils.loadAnimation( getApplicationContext(), R.anim.fade );
 //        Animation animation1 = AnimationUtils.loadAnimation( getApplicationContext(),R.anim.fade1 );

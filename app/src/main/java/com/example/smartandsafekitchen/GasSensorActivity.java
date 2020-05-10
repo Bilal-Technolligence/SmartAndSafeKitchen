@@ -45,7 +45,7 @@ public class GasSensorActivity extends AppCompatActivity {
         setContentView( R.layout.activity_gas_sensor );
         gasDetacted = findViewById(R.id.txtGas);
 
-        dref.child( "SmokeGas" ).addListenerForSingleValueEvent( new ValueEventListener() {
+        dref.child( "SmokeGas" ).addValueEventListener( new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                 // smoke =Float.parseFloat(dataSnapshot.child( "Smoke" ).getValue().toString());
@@ -53,8 +53,10 @@ public class GasSensorActivity extends AppCompatActivity {
                 if(gas==1)
                 {
                     gasDetacted.setText("Gas Detected stay save don't burn stove without checking the leakage of gas");
-                    generateAlert();
-                    saveNotificationfirebase();
+                   // generateAlert();
+                   // saveNotificationfirebase();
+                }else{
+                    gasDetacted.setText("Gas Pressure Normal  No gas Leakage  you can burn stove");
                 }
 
 

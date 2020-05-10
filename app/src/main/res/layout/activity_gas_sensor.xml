@@ -72,7 +72,7 @@
                             android:layout_alignParentLeft="true"
                             android:layout_marginTop="45dp"
                             android:layout_gravity="left"
-                            android:text="Gas Pressure Normal  No gas Leakage  you can burn stove"
+                            android:text=""
                             android:textColor="#000000"
                             android:textSize="25dp" />
 
