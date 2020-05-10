@@ -109,12 +109,13 @@ public class GasSensorActivity extends AppCompatActivity {
     }
 
     public void saveNotificationfirebase(){
+        String key = dref.child("gas").push().getKey();
 
-        dref.child("Notifications/Gas/tittle").setValue( "Stay Safe" );
-        dref.child("Notifications/Gas/description").setValue( "Gas Detected" );
+        dref.child("Notifications").child(key).child("tittle").setValue( "Stay Safe" );
+        dref.child("Notifications").child(key).child("description").setValue( "Gas Detected" );
         String currentDateTimeString = DateFormat.getDateTimeInstance().format(new Date());
-        dref.child("Notifications/Gas/datetime").setValue(currentDateTimeString);
-        dref.child("Notifications/Gas/name").setValue("Gas Alert");
+        dref.child("Notifications").child(key).child("datetime").setValue(currentDateTimeString);
+        dref.child("Notifications").child(key).child("name").setValue("Gas Alert");
 
 
     }
