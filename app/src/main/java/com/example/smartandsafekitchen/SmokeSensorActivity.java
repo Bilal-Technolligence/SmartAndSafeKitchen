@@ -64,6 +64,7 @@ private final String CHANNEL_ID ="personal" ;
                 if(smoke==1)
                 {
                     //dref.child( "SmokeGas" ).child( "fan" ).setValue( 1 );
+                    //abc
                     generateAlert();
                     saveNotificationfirebase();
                     switchButton.setChecked(true);
