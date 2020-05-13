@@ -64,7 +64,7 @@ private final String CHANNEL_ID ="personal" ;
                 if(smoke==1)
                 {
 
-                    generateAlert();
+                    //generateAlert();
                     saveNotificationfirebase();
                     switchButton.setChecked(true);
                     Animation animation = AnimationUtils.loadAnimation(SmokeSensorActivity.this, R.anim.fananim);
