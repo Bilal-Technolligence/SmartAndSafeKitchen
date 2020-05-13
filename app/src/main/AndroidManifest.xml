@@ -9,15 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <service
-            android:name=".MyService"
-            android:enabled="true"
-            android:exported="false"></service>
-
-        <activity android:name=".NotificationActivity" />
-        <activity
-            android:name=".SplashScreen"
-            android:theme="@style/Theme.AppCompat.NoActionBar">
+        <activity android:name=".NotificationActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -25,16 +17,20 @@
             </intent-filter>
         </activity>
         <activity
+            android:name=".SplashScreen"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
+
+        </activity>
+        <activity
             android:name=".TemperatureSensorActivity"
             android:theme="@style/Theme.AppCompat.NoActionBar" />
-        <activity
-            android:name=".GasSensorActivity"
-            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity android:name=".GasSensorActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar"/>
         <activity
             android:name=".SmokeSensorActivity"
             android:theme="@style/Theme.AppCompat.NoActionBar" />
         <activity android:name=".WaterSensorActivity" />
-        <activity android:name=".MainActivity" />
+        <activity android:name=".MainActivity"></activity>
     </application>
 
 </manifest>
